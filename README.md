@@ -4,7 +4,7 @@ A production-ready AI research system where **four specialized CrewAI agents** c
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 User Input → Research Agent → Analysis Agent → Verification Agent → Writer Agent → PDF Report
@@ -207,7 +207,7 @@ wikipedia_cache     -- Cached Wikipedia responses
 
 ---
 
-## 📄 Report Structure
+##  Report Structure
 
 Every generated report includes:
 
