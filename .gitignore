@@ -1,22 +1,23 @@
-# Node
+# Node dependencies
 node_modules/
-frontend/node_modules/
 
-# Python
+# Python virtual environments
 .venv/
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
 
 # Database
 *.db
 
-# Environment
+# Environment variables
 .env
 .env.*
 !.env.example
 
-# Build
+# Build output
 dist/
 build/
 
