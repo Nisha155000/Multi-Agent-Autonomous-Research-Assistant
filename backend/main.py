@@ -21,6 +21,8 @@ from utils.pdf_utils import generate_pdf_report
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+APP_BUILD = "wikipedia-only-2026-07-25"
+
 # In-memory session state for real-time updates
 session_states: dict = {}
 
@@ -39,7 +41,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Multi-Agent Research Assistant API",
-    description="AI-powered research system using CrewAI agents",
+    description="Wikipedia-powered research system",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -211,6 +213,14 @@ async def root():
 @app.get("/health")
 async def health_check():
     return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
+
+
+@app.get("/api/version")
+async def app_version():
+    return {
+        "build": APP_BUILD,
+        "description": app.description,
+    }
 
 
 @app.post("/api/research/start")
