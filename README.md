@@ -41,7 +41,7 @@ User Input → Research Agent → Analysis Agent → Verification Agent → Writ
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```
 research-assistant/
