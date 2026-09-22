@@ -2,7 +2,6 @@
 
 A production-ready AI research system where **four specialized CrewAI agents** collaborate autonomously to research any topic, verify facts, and generate a comprehensive professional report — powered by Wikipedia and OpenAI.
 
----
 
 ##  Architecture
 
